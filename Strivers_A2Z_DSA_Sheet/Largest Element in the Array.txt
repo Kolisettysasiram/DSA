@@ -1,0 +1,17 @@
+import java.util.* ;
+import java.io.*; 
+
+public class Solution {
+
+    static int largestElement(int[] a, int n) {
+        int l=a[0];
+        for(int i=1;i<n;i++)
+        {
+            if(l<a[i])
+            {
+                l=a[i];
+            }
+        }
+        return l;
+    }
+}
