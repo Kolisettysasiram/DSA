@@ -1,0 +1,23 @@
+import java.util.ArrayList;
+import java.util.*;
+
+public class Solution {
+
+        public static ArrayList<Integer> rotateArray(ArrayList<Integer> arr, int k) {
+        int n=arr.size();
+        int m=k%n;
+        ArrayList<Integer> q=new ArrayList<Integer>();
+        for (int i=m; i<n;i++){
+
+            q.add(arr.get(i));
+
+        }
+        for (int i=0;i<m;i++){
+
+            q.add(arr.get(i));
+
+        }
+        return q;
+    }
+}
+
